@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js'></script>
+    <script src='app.js' defer></script>
+</head>
+
+<body>
+    <h1>Acme CDN's</h1>
+    <div class='container'>
+        <ul class='nav nav-tabs'>
+            <li class='nav-item'>
+                <a href="#" class='nav-link'>Products</a>
+            </li>
+            <li class='nav-item'>
+                <a href="#" class='nav-link'>Companies</a>
+            </li>
+        </ul>
+        <table class='table table-striped'>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NAME</th>
+                    <th>DESCRIPTION</th>
+                    <th>SUGGESTED PRICE</th>
+                    <th>CREATED AT</th>
+                    <th>UPDATED AT</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class='products'>
+                    <th>${product.id}</th>
+                    <th>${product.name}</th>
+                    <th>${product.description}</th>
+                    <th>${product.suggestedPrice}</th>
+                    <th>${product.createdAt}</th>
+                    <th>${product.updatedAt}</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
